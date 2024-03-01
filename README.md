@@ -24,3 +24,4 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 -component types.
 -classes.
 -interfaces.
+-Abstrace Classes.
