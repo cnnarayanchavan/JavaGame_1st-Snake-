@@ -19,7 +19,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 
 # Code Snake Game
--arrays
--javax.swing
--component types
--classes
+-arrays.
+-javax.swing.
+-component types.
+-classes.
+-interfaces.
