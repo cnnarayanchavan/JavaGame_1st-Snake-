@@ -1,5 +1,9 @@
+// First Stage is to build the interface (GUI)
+import javax.swing.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+      JFrame frame = new JFrame("Snake");
+        
     }
 }
