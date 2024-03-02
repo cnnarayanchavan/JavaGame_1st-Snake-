@@ -8,5 +8,18 @@ import java.util.Random;
 import javax.swing.*;
 
 public class SnakeGame extends JPanel{
+  // public SnakeGame(int boardwidth, int boardheight){
+  //   this.boardwidth= boardwidth;
+  //   this.boardheight= boardheight;        
+    public SnakeGamae(){
+      
+    }
 
+  public void paint(Graphics g){
+    //setting border of title image of game
+    g.setColor(Color.White);
+    g.drawRect(24,10,851,55);
+    
+  }
+  }
 }
