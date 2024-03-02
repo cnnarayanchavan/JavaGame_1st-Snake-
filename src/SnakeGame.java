@@ -3,7 +3,6 @@
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.event.*;
-import java.array.util.Arraylist;
 import java.util.Random;
 import javax.swing.*;
 
@@ -12,7 +11,7 @@ public class SnakeGame extends JPanel{
   //   this.boardwidth= boardwidth;
   //   this.boardheight= boardheight;        
     public SnakeGamae(){
-      
+      return 0;
     }
     public void paint(Graphics g){
     //setting border of title image of game
