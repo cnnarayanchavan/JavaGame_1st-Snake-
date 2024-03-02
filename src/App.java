@@ -1,4 +1,5 @@
 // First Stage is to build the interface (GUI)
+// creating a board for snake game.
 import javax.swing.*;
 
 public class App {
@@ -14,4 +15,4 @@ public class App {
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
-//now we have to create the Jpanel to further game progress 
+//now we have to create the Jpanel to further game progress of GUI of snake game
