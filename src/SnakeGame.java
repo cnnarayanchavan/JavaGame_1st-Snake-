@@ -15,6 +15,10 @@ public class SnakeGame extends JPanel{
     //setting border of title image of game
     g.setColor(Color.RED);
     g.drawRect(24,10,851,55);
+
+    // now setting us the boarder of actual game play 
+    g.setColor(Color.RED);
+    g.drawRect(24,70,851,55);  
     
   }
   }
