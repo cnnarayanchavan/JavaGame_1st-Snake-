@@ -13,6 +13,9 @@ public class App {
       frame.setResizable(false);
       frame.setLocationRelativeTo(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      SnakeGame game = new SnakeGame();
+      frame.add(game);
+      
     }
 }
 //now we have to create the Jpanel to further game progress of GUI of snake game
