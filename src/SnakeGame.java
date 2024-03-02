@@ -14,12 +14,10 @@ public class SnakeGame extends JPanel{
     public SnakeGamae(){
       
     }
-
-  public void paint(Graphics g){
+    public void paint(Graphics g){
     //setting border of title image of game
-    g.setColor(Color.White);
+    g.setColor(Color.WHITE);
     g.drawRect(24,10,851,55);
     
   }
   }
-}
