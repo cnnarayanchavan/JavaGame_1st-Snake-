@@ -9,16 +9,18 @@ public class SnakeGame extends JPanel{
   // public SnakeGame(int boardwidth, int boardheight){
   //   this.boardwidth= boardwidth;
   //   this.boardheight= boardheight;        
-    private ImageIcon ImageTitle;
-    public int SnakeGamae(){
-      return 0;
-    }
+    private ImageIcon titleImage;
+    // public int SnakeGamae(){
+    //   return 0;
+    // }
     public void paint(Graphics g){
-    //setting border of title image of game
-    ImageTitle = new ImageIcon("Title.jpg");
-    ImageTitle.paintIcon(this, g, 25, 11);
+
     g.setColor(Color.RED);
     g.drawRect(24,10,851,55);
+
+     //setting border of title image of game
+     titleImage = new ImageIcon("title.jpg");
+     titleImage.paintIcon(this, g, 25, 11);
 
     // now setting us the boarder of actual game play 
     g.setColor(Color.RED);
