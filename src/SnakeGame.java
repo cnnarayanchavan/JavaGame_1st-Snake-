@@ -60,7 +60,7 @@ public class SnakeGame extends JPanel{
 
 
 
-
+//rendom
 // public class SnakeGame extends JPanel{
 //   public SnakeGame(int boardwidth, int boardheight){
 //   this.boardwidth= boardwidth;
