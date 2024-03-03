@@ -6,13 +6,15 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        int boardwidth = 700;
+        int boardheight = boardwidth;
       JFrame frame = new JFrame();
-      frame.setTitle("Snake");
+      frame.setTitle("Snake_Game");
       //frame.setSize(boardwidth,boardheight);
-      frame.setBounds(10,10,905,700);
+      frame.setSize(boardwidth, boardheight);
       frame.setVisible(true);
       frame.setResizable(false);
-      // frame.setLocationRelativeTo(null);
+      frame.setLocationRelativeTo(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       frame.setBackground(Color.DARK_GRAY);
       SnakeGame game = new SnakeGame();
