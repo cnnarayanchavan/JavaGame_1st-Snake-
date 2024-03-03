@@ -35,7 +35,13 @@ public class SnakeGame extends JPanel{
         draw(g);
     }
     public void draw(Graphics g){
-
+    // for definign grids on board of snake game
+        for(int i = 0; i<boardwidth/tileSize; i++){
+            g.drawLine(i*tileSize, 0, i*tileSize, boardheight);
+            g.drawLine( 0, i*tileSize, boardwidth, i*tileSize);
+            
+                
+        }
         
         //defining color for snake
         g.setColor(Color.yellow);
