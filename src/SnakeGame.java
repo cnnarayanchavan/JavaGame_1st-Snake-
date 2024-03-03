@@ -20,7 +20,7 @@ public class SnakeGame extends JPanel{
     int boardheight;
     int tileSize = 25;
     Tile SnakeHead;
-    Tile Food;
+    Tile food;
 
     SnakeGame(int boardwidth, int boardheight){
         this.boardwidth = boardwidth;
