@@ -6,20 +6,19 @@ import javax.swing.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int boardwidth = 700;
+        int boardwidth = 600;
         int boardheight = boardwidth;
-      JFrame frame = new JFrame();
-      frame.setTitle("Snake_Game");
-      //frame.setSize(boardwidth,boardheight);
-      frame.setSize(boardwidth, boardheight);
+      JFrame frame = new JFrame("Snake");
+      frame.setSize(boardwidth,boardheight);
       frame.setVisible(true);
       frame.setResizable(false);
       frame.setLocationRelativeTo(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      frame.setBackground(Color.DARK_GRAY);
-      SnakeGame game = new SnakeGame();
-      frame.add(game);
       
+      
+      SnakeGame game = new SnakeGame(boardwidth, boardheight);
+      frame.add(game);
+      frame.pack();
     }
 }
 //now we have to create the Jpanel to further game progress of GUI of snake game
