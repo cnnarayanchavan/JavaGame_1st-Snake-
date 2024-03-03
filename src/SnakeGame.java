@@ -6,10 +6,10 @@ import java.awt.*;
 
 
 public class SnakeGame extends JPanel{
-  // public SnakeGame(int boardwidth, int boardheight){
-  //   this.boardwidth= boardwidth;
-  //   this.boardheight= boardheight;        
-    private ImageIcon titleImage;
+  public SnakeGame(int boardwidth, int boardheight){
+  this.boardwidth= boardwidth;
+  this.boardheight= boardheight;        
+    // private ImageIcon titleImage;
     // public int SnakeGamae(){
     //   return 0;
     // }
