@@ -46,7 +46,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         
         setBackground(Color.black);
 
-        addKetListener(this);
+        addKeyListener(this);
         setFocusable(true);
         
         SnakeHead = new Tile(5,5);
