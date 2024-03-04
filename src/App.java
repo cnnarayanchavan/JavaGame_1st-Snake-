@@ -14,12 +14,13 @@ public class App {
       frame.setResizable(false);
       frame.setLocationRelativeTo(null);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      game.requestFocus();
+      
       
       
       SnakeGame game = new SnakeGame(boardwidth, boardheight);
       frame.add(game);
       frame.pack();
+      game.requestFocus();
     }
 }
 //now we have to create the Jpanel to further game progress of GUI of snake game
