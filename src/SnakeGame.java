@@ -123,6 +123,8 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
             velocityY = 0;
         }
     }
+    //now we have to make the game pannel (snake board) is to listen to the key presses
+    //for that we have add the prigram into the constructor
 
     @Override
     public void keyTyped(KeyEvent e) {}
