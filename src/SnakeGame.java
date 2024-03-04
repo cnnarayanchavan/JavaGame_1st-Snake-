@@ -114,6 +114,10 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
                 velocityX =0;
                 velocityY=1;
         }
+        else if(e.getKeyCode()==KeyEvent.VK_LEFT){
+            velocityX = -1;
+            VelocityY = 0;
+        }
     }
 
     @Override
