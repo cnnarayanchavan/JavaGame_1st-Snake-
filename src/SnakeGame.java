@@ -4,9 +4,12 @@ import java.awt.event.*;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
+
 import javax.swing.*;
 
-public class SnakeGame extends JPanel{
+
+public class SnakeGame extends JPanel implements ActionListener,KeyListener{
 
     private class Tile{
         int x;
@@ -19,16 +22,43 @@ public class SnakeGame extends JPanel{
     int boardwidth;
     int boardheight;
     int tileSize = 25;
+
     Tile SnakeHead;
+
     Tile food;
+
+    Random random;
+
+    //game logic for move snake
+    Timer gameLoop;
+
+    //movement for snake
+    int velocityX;
+    int velocityY;
+    
+
 
     SnakeGame(int boardwidth, int boardheight){
         this.boardwidth = boardwidth;
         this.boardheight = boardheight;
+        
         setPreferredSize(new Dimension(this.boardwidth, this.boardheight));
+        
         setBackground(Color.black);
+        
         SnakeHead = new Tile(5,5);
+
         food = new Tile(10,10);
+
+        random = new Random();
+
+        placeFood();
+
+        gameLoop = new Timer(100, this);
+        gameLoop.start();
+
+        velocityX = 0;
+        velocityY = 0;
         
 
     }
@@ -55,6 +85,43 @@ public class SnakeGame extends JPanel{
         g.setColor(Color.yellow);
         g.fillRect(SnakeHead.x * tileSize, SnakeHead.y*tileSize, tileSize, tileSize);
     }
+
+
+    //now for placing the food at random position 
+    public void placeFood(){
+        food.x = random.nextInt(boardwidth/tileSize); //600/24 = 24
+        food.y = random.nextInt(boardheight/tileSize);
+    }
+
+    public void move(){
+        SnakeHead.x+=velocityX;
+        SnakeHead.y+=velocityY;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        move();
+        repaint();
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        if(e.getKeyCode() == KeyEvent.VK_UP){
+            velocityX = 0;
+            velocityY = -1;
+        }
+        else if ( e.getKeyCode() == KeyEvent.VK_DOWN) {
+                velocityX =0;
+                velocityY=1;
+        }
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {}
+
+
+    @Override
+    public void keyReleased(KeyEvent e) {} 
 
 }
 

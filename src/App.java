@@ -1,6 +1,6 @@
 // First Stage is to build the interface (GUI)
 // creating a board for snake game.
-import java.awt.Color;
+//import java.awt.Color;
 
 import javax.swing.*;
 
