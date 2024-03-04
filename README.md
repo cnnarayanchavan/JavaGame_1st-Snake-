@@ -25,3 +25,6 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 -classes.
 -interfaces.
 -Abstrace Classes.
+-further more for storing the each stle of snakes body we have to use array list.
+
+
