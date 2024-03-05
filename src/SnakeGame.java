@@ -5,7 +5,6 @@ import javax.swing.JPanel;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
-
 import javax.swing.*;
 
 
@@ -23,8 +22,11 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
     int boardheight;
     int tileSize = 25;
 
+    //snake head
     Tile SnakeHead;
-
+    ArrayList<Tile> snakeBody;
+    
+    //snake food
     Tile food;
 
     Random random;
@@ -48,6 +50,8 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
 
         addKeyListener(this);
         setFocusable(true);
+
+        snakeBody = new ArrayList<Tile>();
         
         SnakeHead = new Tile(5,5);
 
@@ -95,6 +99,9 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         food.x = random.nextInt(boardwidth/tileSize); //600/24 = 24
         food.y = random.nextInt(boardheight/tileSize);
     }
+
+    //function for detect collision between snake head and food.
+    
 
     public void move(){
         SnakeHead.x+=velocityX;
