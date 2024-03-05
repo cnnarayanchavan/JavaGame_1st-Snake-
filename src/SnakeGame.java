@@ -147,6 +147,10 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         //snake head
         SnakeHead.x+=velocityX;
         SnakeHead.y+=velocityY;
+
+        //added game over condition if..
+        // 1st the snake collidies with it's won body 
+        //2nd if snake touches the broder
     }
 
     @Override
