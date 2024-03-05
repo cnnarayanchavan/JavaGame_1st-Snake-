@@ -128,7 +128,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
             placeFood();
         }
 
-        for(int i= snakeBodt.size()-1; i>=0; i--){
+        for(int i= snakeBody.size()-1; i>=0; i--){
             Tile snakePart = snakeBody.get(i);
     
         if(i==0){
@@ -138,8 +138,8 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         }
         else{
             Tile previousSnakePart = snakeBody.get(i-1);
-            snakePart.x = PreviousSnakePart.x;
-            snakePart.y = PreviousSnakePart.y;
+            snakePart.x = previousSnakePart.x;
+            snakePart.y = previousSnakePart.y;
         }
         } 
 
