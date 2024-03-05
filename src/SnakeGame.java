@@ -99,6 +99,9 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         //defining color for snake
         g.setColor(Color.yellow);
         g.fillRect(SnakeHead.x * tileSize, SnakeHead.y*tileSize, tileSize, tileSize);
+
+        //body of snake 
+        
     }
  
 
@@ -109,10 +112,20 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
     }
 
     //function for detect collision between snake head and food.
-    
+     public boolean collision(Tile tile1, Tile tile2){
+         return tile1.x == tile2.x && tile1.y == tile2.y;
+     }
     
 
     public void move(){
+
+        //eating food
+        if(collision(SnakeHead, food)){
+            snakeBody.add(new Tile(food.x,food.y));
+            placeFood();
+        }
+
+        //snake head
         SnakeHead.x+=velocityX;
         SnakeHead.y+=velocityY;
     }
