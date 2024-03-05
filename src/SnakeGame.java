@@ -37,6 +37,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
 
     //game logic for move snake
     Timer gameLoop;
+    Boolean gameOver = false;
 
     //movement for snake
     int velocityX;
