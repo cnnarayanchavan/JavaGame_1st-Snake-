@@ -151,12 +151,22 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         //added game over condition if..
         // 1st the snake collidies with it's won body 
         //2nd if snake touches the broder
+        for(int i=0; i<snakeBody.size(); i++){
+            Tile snakPart = snakeBody.get(i)
+                //if it collied with snake head 
+                if(collision(SnakeHead,snakePart)){
+                    gameOver = true;
+                }
+        }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         move();
         repaint();
+        if(gameOver){
+            gameLoop.stop();
+        }
     }
 
     @Override
