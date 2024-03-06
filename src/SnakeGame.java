@@ -154,7 +154,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         for(int i=0; i<snakeBody.size(); i++){
             Tile snakPart = snakeBody.get(i);
                 //if it collied with snake head 
-                if(collision(SnakeHead,snakePart)){
+                if(collision(SnakeHead,snakPart)){
                     gameOver = true;
                 }
         }
