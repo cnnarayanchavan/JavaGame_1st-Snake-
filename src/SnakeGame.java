@@ -172,9 +172,10 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         if(gameOver){
             gameLoop.stop();
         }
-        if(gameOver){
-            gameLoop.stop();
-        }
+        // if(gameOver){
+        //     gameLoop.stop();  //no need to be overwritten the collied condition 
+        // }
+        
     }
 
     @Override
