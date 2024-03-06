@@ -106,6 +106,15 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
             Tile snakePart = snakeBody.get(i);
             g.fillRect(snakePart.x*tileSize, snakePart.y*tileSize, tileSize, tileSize);       
         }
+        //for tracking score of the game 
+        g.setFont(new Font("Arial",Font.PLAIN, 20));
+        if(gameOver){
+            g.setColor(Color.blue);
+            g.DrawString(" GAME_OVER: " +String.valueOf(snakeBody.size()),tileSize - 16, tileSize);
+        }
+        else{
+            g.drawString(" SCORE: " +String.valueOf(snakeBody.size()),tileSize - 16, tileSize);
+        }
     }
  
 
