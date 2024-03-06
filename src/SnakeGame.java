@@ -160,7 +160,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         }
 
         //another condtion for if snake touches any of four walls it will stop 
-        if(SankeHead.x*tileSize <0 || SnakeHead.x*tileSize>boardwidth || SnakeHead.y*tileSize <0 || SnakeHead.y*tileSize>boardheight){
+        if(SnakeHead.x*tileSize <0 || SnakeHead.x*tileSize>boardwidth || SnakeHead.y*tileSize <0 || SnakeHead.y*tileSize>boardheight){
             gameOver = true;
         }
     }
@@ -172,7 +172,7 @@ public class SnakeGame extends JPanel implements ActionListener,KeyListener{
         if(gameOver){
             gameLoop.stop();
         }
-        if(GameOver){
+        if(gameOver){
             gameLoop.stop();
         }
     }
