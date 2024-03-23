@@ -18,7 +18,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
 
-![IMG_3622](https://github.com/cnnarayanchavan/JavaGame_1st-Snake-/assets/113028954/068f9126-ee63-4155-ba5f-a53f70e19e56)
+
 
 
 # Code Snake Game
