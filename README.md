@@ -21,6 +21,10 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 # Game Window
 ![Screenshot 2024-03-24 003158](https://github.com/cnnarayanchavan/JavaGame_1st-Snake-/assets/113028954/2f88b39e-ca2d-4d20-aa1c-9f3c50d082b1)
 
+#GameOver Condition
+![Snake_GameOver](https://github.com/cnnarayanchavan/JavaGame_1st-Snake-/assets/113028954/3dbfca10-4507-4e1e-8118-a3d1346b8948)
+
+
 
 
 
